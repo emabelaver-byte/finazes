@@ -17,12 +17,15 @@ import {
 } from 'firebase/auth';
 import { getFirestore, collection, addDoc, deleteDoc, doc, onSnapshot, setDoc, getDoc, updateDoc } from 'firebase/firestore';
 
-// --- IMPORTANTE: CONFIGURACIÓN DE TU PROYECTO ---
-// Cuando sigas la guía y crees tu propio Firebase, reemplazarás esto con tus propios datos.
-// Por ahora, usa la configuración automática del entorno de prueba.
-const firebaseConfig = typeof __firebase_config !== 'undefined' 
-  ? JSON.parse(__firebase_config) 
-  : { apiKey: "TU_API_KEY_REAL", authDomain: "tu-app.firebaseapp.com", projectId: "tu-app", storageBucket: "tu-app.appspot.com", messagingSenderId: "...", appId: "..." };
+firebaseConfig = {
+  apiKey: "AIzaSyAeDp3tVbDrUVUhlAB4U5hdjq54hU48kHE",
+  authDomain: "finanzas2026-ebe.firebaseapp.com",
+  projectId: "finanzas2026-ebe",
+  storageBucket: "finanzas2026-ebe.firebasestorage.app",
+  messagingSenderId: "723072147177",
+  appId: "1:723072147177:web:196c2063fc1a89a0aa5a78",
+  measurementId: "G-ER77JHMG02"
+};
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
