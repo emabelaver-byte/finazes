@@ -17,7 +17,7 @@ import {
 } from 'firebase/auth';
 import { getFirestore, collection, addDoc, deleteDoc, doc, onSnapshot, setDoc, getDoc, updateDoc } from 'firebase/firestore';
 
-firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyAeDp3tVbDrUVUhlAB4U5hdjq54hU48kHE",
   authDomain: "finanzas2026-ebe.firebaseapp.com",
   projectId: "finanzas2026-ebe",
@@ -26,7 +26,6 @@ firebaseConfig = {
   appId: "1:723072147177:web:196c2063fc1a89a0aa5a78",
   measurementId: "G-ER77JHMG02"
 };
-
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
